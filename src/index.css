@@ -1,0 +1,55 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/*
+******************************************* BOOKLIST *********************************************************
+*/
+section {
+  display: grid;
+  width: 90vw;
+  margin: 5rem auto;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 2rem;
+  place-items: center;
+}
+
+@media screen and (min-width: 770px) {
+  section {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/*
+******************************************* BOOK **************************************************************
+*/
+article {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  width: 50%;
+  color: black;
+  padding: 1rem;
+}
+article img {
+  width: 100%;
+  object-fit: cover;
+}
